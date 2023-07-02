@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Card Frontendmentor</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="hero">
+        <img
+        src="/images/illustration-hero.svg"
+        alt="card-image-a-lady"
+        class="card-img"
+      />
+      </div>
+
+      <div class="card-content">
+        <h2 class="title">Order Summary</h2>
+        <p class="subtitle">You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        <div class="price-box">
+            <div class="price-box-left">
+                <img src="/images/icon-music.svg" alt="">
+                <div>
+                    <h5 style="color: black;">Annual Plan</h5>
+                    <p style="color: black;">$59.99/year</p>
+                </div>
+            </div>
+            <a href="#" class="change">Change</a>
+        </div>
+        <button href="payment" class="submit-btn">Proceed to Payment</button>
+        <a href="cancel"
+      class="cancel-btn">Cancel Order</a>
+      </div>
+    </div>
+
+
+    <script>
+        //if-submit button pressed then proceed to payment
+        const submitBtn = document.querySelector('.submit-btn');
+        submitBtn.addEventListener('click', function () {
+            window.location.href = 'payment';
+        });
+        //if-cancel button pressed then proceed to home
+        const cancelBtn = document.querySelector('.cancel-btn');
+    cancelBtn.addEventListener('click', function () {
+        window.location.href = 'home';
+    });
+    </script>
+  </body>
+</html>
